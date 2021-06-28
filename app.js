@@ -48,3 +48,15 @@ const info = document.getElementById("info");
 const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector(".next-btn");
 const randomBtn = document.querySelector(".random-btn");
+
+// set initial start
+
+let currentItem = 0;
+
+window.addEventListener('DOMContentLoaded', function() {
+  const item = reviews[currentItem]
+  img.src = item.img
+  author.textContent = item.name
+  job.textContent = item.job
+  info.textContent = item.text
+})
